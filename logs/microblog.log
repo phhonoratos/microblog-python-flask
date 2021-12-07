@@ -1,0 +1,62 @@
+2021-12-03 11:03:37,232 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-03 11:15:33,131 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-03 11:16:41,751 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-03 11:16:45,116 ERROR: Exception on /edit_profile [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 82, in edit_profile
+    form = EditProfileForm()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2021-12-03 11:16:49,697 ERROR: Exception on /edit_profile [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 82, in edit_profile
+    form = EditProfileForm()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2021-12-03 11:17:03,737 ERROR: Exception on /edit_profile [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 82, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2021-12-03 11:17:45,160 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-03 11:19:59,660 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-06 20:24:24,519 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-06 20:24:43,466 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-06 21:12:37,041 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-06 21:13:30,931 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-06 21:15:41,708 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
+2021-12-06 21:49:39,437 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:44]
