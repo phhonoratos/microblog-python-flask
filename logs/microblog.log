@@ -51,3 +51,67 @@ smtplib.SMTPServerDisconnected: please run connect() first
 2021-12-08 17:30:51,775 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:46]
 2021-12-08 19:41:23,435 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:46]
 2021-12-08 19:52:21,269 INFO: Microblog startup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:84]
+2021-12-09 10:26:50,603 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:29:44,767 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:29:46,439 ERROR: Exception on /register [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 69, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/templates/register.html", line 2, in top-level template code
+    {% import 'bootstap/wtf.html' as wtf %}
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstap/wtf.html
+2021-12-09 10:30:35,345 ERROR: Exception on /register [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 69, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/templates/register.html", line 2, in top-level template code
+    <!-- {% import 'bootstrap/wtf.html' as wtf %} -->
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstap/wtf.html
+2021-12-09 10:30:52,331 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:31:11,220 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:33:39,374 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 09:10:01,344 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:00:57,992 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:09:36,978 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:14:36,915 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:19:10,971 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
