@@ -1,4 +1,4 @@
-2021-12-08 17:09:21,833 ERROR: Exception on /reset_password_request [POST] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+2021-12-08 17:23:31,615 ERROR: Exception on /reset_password_request [POST] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_mail.py", line 492, in send
     message.send(connection)
@@ -48,29 +48,12 @@ Traceback (most recent call last):
   File "/usr/lib/python3.8/smtplib.py", line 363, in send
     raise SMTPServerDisconnected('please run connect() first')
 smtplib.SMTPServerDisconnected: please run connect() first
-2021-12-08 17:18:24,153 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:46]
-2021-12-08 17:18:33,970 ERROR: Exception on /reset_password_request [POST] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_mail.py", line 492, in send
-    message.send(connection)
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_mail.py", line 427, in send
-    connection.send(self)
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_mail.py", line 188, in send
-    self.host.sendmail(sanitize_address(envelope_from or message.sender),
-  File "/usr/lib/python3.8/smtplib.py", line 865, in sendmail
-    self.ehlo_or_helo_if_needed()
-  File "/usr/lib/python3.8/smtplib.py", line 604, in ehlo_or_helo_if_needed
-    if not (200 <= self.ehlo()[0] <= 299):
-  File "/usr/lib/python3.8/smtplib.py", line 444, in ehlo
-    self.putcmd(self.ehlo_msg, name or self.local_hostname)
-  File "/usr/lib/python3.8/smtplib.py", line 371, in putcmd
-    self.send(str)
-  File "/usr/lib/python3.8/smtplib.py", line 363, in send
-    raise SMTPServerDisconnected('please run connect() first')
-smtplib.SMTPServerDisconnected: please run connect() first
-
-During handling of the above exception, another exception occurred:
-
+2021-12-08 17:30:51,775 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:46]
+2021-12-08 19:41:23,435 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:46]
+2021-12-08 19:52:21,269 INFO: Microblog startup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:84]
+2021-12-09 10:26:50,603 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:29:44,767 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:29:46,439 ERROR: Exception on /register [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -80,23 +63,57 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 152, in reset_password_request
-    send_password_reset_email(user)
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/email.py", line 13, in send_password_reset_email
-    send_email('[Microblog] Reset Your Password',
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/email.py", line 9, in send_email
-    mail.send(msg)
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_mail.py", line 492, in send
-    message.send(connection)
-  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask_mail.py", line 152, in __exit__
-    self.host.quit()
-  File "/usr/lib/python3.8/smtplib.py", line 997, in quit
-    res = self.docmd("quit")
-  File "/usr/lib/python3.8/smtplib.py", line 424, in docmd
-    self.putcmd(cmd, args)
-  File "/usr/lib/python3.8/smtplib.py", line 371, in putcmd
-    self.send(str)
-  File "/usr/lib/python3.8/smtplib.py", line 363, in send
-    raise SMTPServerDisconnected('please run connect() first')
-smtplib.SMTPServerDisconnected: please run connect() first
-2021-12-08 17:23:04,251 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:46]
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 69, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/templates/register.html", line 2, in top-level template code
+    {% import 'bootstap/wtf.html' as wtf %}
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstap/wtf.html
+2021-12-09 10:30:35,345 ERROR: Exception on /register [GET] [in /home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/routes.py", line 69, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/app/templates/register.html", line 2, in top-level template code
+    <!-- {% import 'bootstrap/wtf.html' as wtf %} -->
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/pontotel/Documents/Honorato/Flask/microblog/microblog/lib/python3.8/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstap/wtf.html
+2021-12-09 10:30:52,331 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:31:11,220 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-09 10:33:39,374 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 09:10:01,344 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:00:57,992 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:09:36,978 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:14:36,915 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-10 15:19:10,971 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-14 09:22:14,974 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:48]
+2021-12-14 09:53:25,265 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:50]
