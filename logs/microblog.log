@@ -40,3 +40,4 @@ ValueError: expected only letters, got 'pt-br'
 2021-12-14 22:11:13,946 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:54]
 2021-12-14 22:13:28,250 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:54]
 2021-12-14 22:13:32,657 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:54]
+2021-12-16 11:34:04,589 INFO: Microblog statup [in /home/pontotel/Documents/Honorato/Flask/microblog/app/__init__.py:54]
